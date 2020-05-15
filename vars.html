@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vars</title>
+</head>
+<body>
+
+<input type="text" id="inpT">
+<button id="mb">Change </button>
+<p id="nT">This is text</p>
+
+<script type="text/javascript">
+
+    document.getElementById('mb').onclick = function () {
+        document.getElementById('nT').innerHTML = document.getElementById('nT').innerHTML + ' ' + document.getElementById('inpT').value;
+    }
+
+</script>
+
+
+</body>
+</html>

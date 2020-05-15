@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arrays</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+    var myArray = new Array();
+
+    myArray[0] = 'pizza';
+    myArray[1] = 'chocolate';
+    myArray[0] = 'sausage';
+    myArray[1] = 'cake';
+    myArray[0] = 'onion';
+    myArray[1] = 'coffee';
+
+    // remove element 1 and only 1 element ::: if you want 2 - cnange second parameter
+    myArray.splice(1, 1);
+
+    // add 1 after 1
+    myArray.splice(1, 0, 'breakfast');
+    // add 1 after 1 and remove 1
+    myArray.splice(1, 1, 'Num');
+
+</script>
+
+
+</body>
+</html>
