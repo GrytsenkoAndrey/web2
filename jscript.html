@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS test 1</title>
+</head>
+<body>
+
+<p id="text">Hello</p>
+
+<button id="myB1">Change text</button>
+
+<p id="secondPar">JavaScript is ....</p>
+
+<button id="myB2">Change text</button>
+
+<p id="create"></p>
+
+<button id="myB3">Change text</button>
+
+<script type="text/javascript">
+    document.getElementById('myB3').onclick = function () {
+        document.getElementById('create').innerHTML = '';
+    }
+
+
+   /*
+    var but_1 = document.getElementById('myB1');
+
+    but_1.onclick = function () {
+        //alert('button pressed');
+        document.getElementById('text').innerHTML = 'new text';
+    };
+
+    document.getElementById('myB2').onclick = function () {
+        document.getElementById('secondPar').innerHTML += ' My name is K';
+    } */
+    //document.getElementById('text').innerHTML = "Buy";
+</script>
+
+</body>
+</html>
