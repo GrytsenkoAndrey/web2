@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Circles</title>
+
+    <style>
+        .circle{
+            width:200px;
+            height:200px;
+            border-radius: 50%;
+            float:left;
+            margin:50px;
+        }
+        #c1{
+            background-color: red;
+        }
+        #c2{
+            background-color: yellow;
+        }
+        #c3{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+
+<div class='circle' id="c1"></div>
+<div class='circle' id="c2"></div>
+<div class='circle' id="c3"></div>
+
+
+<script type="text/javascript">
+document.getElementById('c1').onclick = function () {
+    document.getElementById('c1').style.display = 'none';
+}
+document.getElementById('c2').onclick = function () {
+    document.getElementById('c2').style.display = 'none';
+}
+document.getElementById('c3').onclick = function () {
+    document.getElementById('c3').style.display = 'none';
+}
+
+</script>
+
+</body>
+</html>
