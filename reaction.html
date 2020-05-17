@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <title> Reaction game </title>
     <style type="text/css">
-
+        body{
+            font-family: sans-serif;
+        }
         #shape {
             width: 200px;
             height:200px;
@@ -17,7 +19,9 @@
     </style>
 </head>
 <body>
-<p>Your time: <span id="timeTaken"></span></p>
+
+<h1>Reaction timer</h1>
+<h2>Your time: <span id="timeTaken"></span></h2>
 <div id="shape"></div>
 
 
@@ -38,8 +42,8 @@
     function makeShape() {
         var top = Math.random() * 400;
         var left = Math.random() * 400;
-        var width = Math.random() * 250;
-        var height = Math.random() * 250;
+        var width = 100 + Math.random() * 150;
+        var height = 100 + Math.random() * 150;
         var shape = document.getElementById('shape');
 
         if (Math.random() > 0.5) {
