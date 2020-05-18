@@ -3,8 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Template JQuery </title>
+    <script type="text/javascript" src="jquery.js"></script>
+
+    <style>
+        #circle{
+            width:150px;
+            height:150px;
+            border-radius:50%;
+            background-color: green;
+            margin:10px;
+        }
+        .square{
+            width:150px;
+            height:150px;
+            background-color: red;
+            margin:10px;
+        }
+    </style>
 </head>
 <body>
+
+<div id="circle"></div>
+<div class="square"></div>
+<div class="square"></div>
+
+<script type="text/javascript">
+
+    $('div').click(function(){
+        alert('Pressed');
+    });
+
+</script>
+
 
 </body>
 </html>
