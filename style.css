@@ -48,8 +48,10 @@ textarea{
 }
 .panel{
     float:left;
-    width:49%;
 }
 iframe{
     border:none;
+}
+.hidden{
+    display:none;
 }

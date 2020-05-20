@@ -11,7 +11,17 @@ $('.toggleButton').hover(function () {
 $('.toggleButton').click(function() {
     $(this).toggleClass('active');
     $(this).removeClass('hlButton');
+
+    // for show and hide
+    var areaId = $(this).attr('id') + 'area';
+    $('#' + areaId).toggleClass('hidden');
+
+    $('.panel').width(($(window).width() / 2) - 10);
 });
 
 $('.panel').height($(window).height() - $('header').height() - 20);
-$('iframe').contents().find('html').html('my');
+$('.panel').width(($(window).width() / 2) - 10);
+
+$('textarea').on('change keyup paste', function () {
+    $('iframe').contents().find('html').html($('#htmlarea').val());
+});
