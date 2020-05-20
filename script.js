@@ -13,4 +13,5 @@ $('.toggleButton').click(function() {
     $(this).removeClass('hlButton');
 });
 
-$('textarea').height($(window).height() - $('header').height() - $('header').padding());
+$('.panel').height($(window).height() - $('header').height() - 20);
+$('iframe').contents().find('html').html('my');

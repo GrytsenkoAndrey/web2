@@ -42,6 +42,14 @@ header{
     background-color:grey;
 }
 textarea{
-    width:50%;
     resize:none;
+    border:1px solid grey;
+    border-top:none;
+}
+.panel{
+    float:left;
+    width:49%;
+}
+iframe{
+    border:none;
 }
